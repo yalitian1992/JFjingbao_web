@@ -1,0 +1,31 @@
+html, body {
+    height: 100%;
+}
+
+.zl_layout {
+    height: 100%;
+    position: relative;
+    z-index: 5;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* 首屏 */
+.home {
+	background: red;
+}
+
+/* 游戏特色 */
+.feature {
+	background: blue;
+}
+

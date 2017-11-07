@@ -1,0 +1,120 @@
+
+@font-face {
+	font-family: '方正北魏楷书简体';   /*方正北魏楷书简体*/
+	src: url('../font/font-style.TTF');       /*字体源文件*/
+  }
+  body, div, span, header, footer, nav, section, aside, article, ul, ol, dl, dt, dd, li, a, p, h1, h2, h3, h4, h5, h6, i, b, textarea, button, input, select, figure, figcaption, img {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-style: normal;
+  text-decoration: none;
+  font-weight: normal;
+  border: none;
+  box-sizing: border-box;
+  line-height: 1;
+  font-family: "方正北魏楷书简体", sans-serif;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+}
+button, input, textarea, select {
+  -webkit-appearance: none;
+  outline: none;
+}
+
+/* 左浮动 */
+.fl {
+  float: left !important;
+}
+
+/* 右浮动 */
+.fr {
+  float: right !important
+}
+
+/* 清除浮动 */
+.clear:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.clear {
+  zoom: 1;
+}
+
+/* 单行文本溢出 */
+.one-txt-cut {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis
+}
+
+/* 多行文本溢出 */
+.txt-cut {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical
+}
+
+/* 文字居中 */
+.ac {
+  text-align: center;
+}
+
+/* 文字居右 */
+.ar {
+  text-align: right;
+}
+
+/* 弹性盒子 */
+.flex {
+  display: flex;
+}
+
+/* 自适应剩余宽度 */
+.flex-1 {
+  flex: 1;
+}
+
+/* 向上对齐 */
+.vt {
+  display: flex;
+  align-items: flex-start;
+}
+
+/* 垂直居中 */
+.vc {
+  display: flex;
+  align-items: center;
+}
+
+/* 向下对齐 */
+.vb {
+  display: flex;
+  align-items: flex-end;
+}
+
+/* 两端对齐 */
+.hb {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* 左右居中对齐 */
+.ha {
+  display: flex;
+  justify-content: space-around;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+body {
+  background: #fff;
+}
