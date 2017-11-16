@@ -1,3 +1,15 @@
+function launchFullScreen(element) {
+  if(element.requestFullscreen) {
+    element.requestFullscreen();
+  } else if(element.mozRequestFullScreen) {
+    element.mozRequestFullScreen();
+  } else if(element.webkitRequestFullscreen) {
+    element.webkitRequestFullscreen();
+  } else if(element.msRequestFullscreen) {
+    element.msRequestFullscreen();
+  }
+}
+
 $(function () {
 
     new Swiper('#swiper-container-1', {
@@ -24,13 +36,34 @@ $(function () {
         }
     })
 
+  // 第三屏 切换
+  $(".model li.li2 span").on("click", function(){
+    var idY = $(".model .li2>span").index(this);
+    $(".pic-scroll .txt .txt-bor:nth-child("+ (idY+1) +")").addClass("active").siblings().removeClass("active");
+
+  })
+
+  // 第四屏 卡牌切换
+  $(".card-logo").on("click", function(){
+    var idx = $(".card-logo").index(this);
+    $(".card-content ul:nth-child("+ (idx+1) +")").addClass("active").siblings().removeClass("active");
+  })
+
+  // 弹框
+  $(".card-pos ul").on("click", function(){
+    var idS = $(".card-pos ul").index(this);
+    $(".swiper-slide-5").addClass("active");
+
+  })
+
+
   // 轮播图  第六屏
-    new Swiper('#swiper-container-2', {
+    var hehe = new Swiper('#swiper-container-2', {
         direction: 'horizontal',
-        paginationBulletRender: function () {
+       /* paginationBulletRender: function () {
             return '';
-        },
-        pagination: '.swiper-pagination',
+        },*/
+        pagination: '.raiders-pagination',
         paginationClickable: true,
         nextButton: '.swiper-button-next',
         prevButton: '.swiper-button-prev',
@@ -78,11 +111,6 @@ $(function () {
     $(this).removeClass("hover")
   })
 
-  // 第四屏 卡牌切换
-  $(".card-logo").on("click",function(){
-    var idx = $(".card-logo").index(this);
-    $(".card-content ul:nth-child("+ (idx+1) +")").addClass("active").siblings().removeClass("active");
-  })
 
 
 
@@ -95,6 +123,25 @@ $(function () {
         nextButton: '.swiper-button-next',
         prevButton: '.swiper-button-prev',
     })
+
+
+  // 视频播放
+  $(".video-button").on("click",function(event){
+    console.log(666)
+    $(".play-nomal").css({
+      zIndex: '-1'
+    });
+    // $(".movie #diamond-story").show(400);
+    $(".movie #diamond-story")[0].play();
+    /*if($("#music")[0].paused == false){
+      $("#music")[0].pause();
+    }*/
+    //让视频全屏自动全屏播放
+    launchFullScreen($(".movie #diamond-story")[0]);
+    // screen.orientation.lock('landscape');
+  });
+
+
 
 
 

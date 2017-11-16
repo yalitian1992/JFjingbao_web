@@ -262,6 +262,18 @@ html, body {
 .pic-scroll .txt{
   position: absolute;
   bottom: 0rem;
+  width: 100%;
+  height: 3rem;
+}
+.pic-scroll .txt .txt-bor{
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+.pic-scroll .txt .txt-bor.active{
+  display: block;
 }
 .model{
   width: 100%;
@@ -287,47 +299,102 @@ html, body {
 .model .li2{
   width: 11.4rem;
   height: 11.4rem;
+  z-index: 2;
 }
 .model .li3{
   width: 16rem;
   height: 16rem;
   border: 1px dashed #fed472;
+  z-index: 1;
 }
 .model .li2 span{
-  width: 2rem;
-  height: 2rem;
+  width: 2.6rem;
+  height: 2.6rem;
   display: block;
   background-size: 100% 100%;
   position: absolute;
 }
+.model .li2 span i{
+  position: absolute;
+}
+.model .li2 .plot{
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
+  display: block;
+  background-size: 100% 100%;
+  box-shadow: 0px 9px 25px rgba(50,25,19,0.53);
+}
+.model .li2 .text{
+  font-size: 0.52rem;
+  color: #d6af81;
+  text-shadow: 0px 1px 0px rgba(50,25,19,0.69);
+}
+
 .model .li2 span:nth-child(1){
-  left: 38%;
-  top: -12%;
+  left: 42%;
+  top: -9%;
+}
+.model .li2 span:nth-child(1) .text{
+  bottom: 0.2rem;
+  left: -0.2rem;
+}
+.model .li2 span:nth-child(1) .plot{
   background-image: url(../images/s1.png);
 }
 .model .li2 span:nth-child(2){
-  left: 84%;
-  top: 14%;
+  left: 85%;
+  top: 16%;
+}
+.model .li2 span:nth-child(2) .text{
+  top: 0.6rem;
+  left: -1.1rem;
+}
+.model .li2 span:nth-child(2) .plot{
   background-image: url(../images/s2.png);
 }
 .model .li2 span:nth-child(3){
-  left: 82%;
-  top: 65%;
+  left: 86%;
+  top: 69%;
+}
+.model .li2 span:nth-child(3) .text{
+  top: 0.2rem;
+  left: -1.1rem;
+}
+.model .li2 span:nth-child(3) .plot{
   background-image: url(../images/s3.png);
 }
 .model .li2 span:nth-child(4){
-  left: 38%;
-  top: 88%;
+  left: 42%;
+  top: 93%;
+}
+.model .li2 span:nth-child(4) .text{
+  top: -0.8rem;
+  left: 0.2rem;
+}
+.model .li2 span:nth-child(4) .plot{
   background-image: url(../images/s4.png);
 }
 .model .li2 span:nth-child(5){
-  left: -4%;
-  top: 64%;
+  left: -1%;
+  top: 66%;
+}
+.model .li2 span:nth-child(5) .text{
+  top: 0.2rem;
+  right: -0.6rem;
+}
+.model .li2 span:nth-child(5) .plot{
   background-image: url(../images/s5.png);
 }
 .model .li2 span:nth-child(6){
-  left: -2%;
-  top: 14%;
+  left: 0%;
+  top: 17%;
+}
+.model .li2 span:nth-child(6) .text{
+  top: 0.6rem;
+  right: -0.1rem;
+}
+.model .li2 span:nth-child(6) .plot{
   background-image: url(../images/s6.png);
 }
 
@@ -335,6 +402,16 @@ html, body {
 .swiper-slide-4{
   background: url(../images/slideBg4.png) no-repeat;
   background-size: 100% 100%;
+  position: relative;
+}
+.swiper-slide-5{
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+.swiper-slide-5.active{
+  display: block;
 }
 .card-logo-box{
   height: 75%;
@@ -528,19 +605,43 @@ html, body {
   background: url(../images/ban-R.png) no-repeat;
   background-size: 100% 100%;
 }
-.ban-center{
+.ban.ban-center{
   bottom: -0.8rem;
   left: -0.7rem;
   width: 14rem;
   height: 11.4rem;
+}
+.ban-center i{
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 14rem;
+  height: 11.4rem;
+}
+.ban-center i:nth-child(2){
+  left: 1.8rem !important;
+}
+.ban-center i:nth-child(2) {
+  left: -2rem !important;
+}
+.ban-center i:nth-child(1){
   background: url(../images/sl1.png) no-repeat;
+  background-size: 100% 100%;
+}
+.ban-center i:nth-child(2){
+  background: url(../images/sl2.png) no-repeat;
+  background-size: 100% 100%;
+}
+.ban-center i:nth-child(3){
+  background: url(../images/sl3.png) no-repeat;
   background-size: 100% 100%;
 }
 .slide-card{
   width: 3.2rem;
   height: 5.4rem;
   bottom: 2.6rem;
-  left: 0.42rem;
+  left: 4.6rem;
   background: url(../images/card1-11.png) no-repeat;
   background-size: 100% 100%;
 }
@@ -602,7 +703,7 @@ html, body {
   position: relative;
   margin: 0 auto;
   width: 100%;
-  height: 17rem;
+  height: 100%;
 }
 .pos{
   position: absolute;
@@ -626,7 +727,7 @@ html, body {
   background-size: 100% 100%;
 }
 .L-sample{
-  bottom: -0.3rem;
+  bottom: 4.8rem;
   left: -3.3rem;
   width: 7.2rem;
   height: 11.4rem;
@@ -642,7 +743,7 @@ html, body {
 }
 .L-sample .box{
   margin: 0 1rem;
-  height: 10rem;
+  height: 9rem;
   overflow-y: scroll;
 }
 .L-sample h3,.L-sample h5,.L-sample h6{
@@ -674,13 +775,11 @@ html, body {
   line-height: 0.5rem;
 }
 
-
-
 .competition-box>span{
   display: block;
   width: 0.8rem;
   height: 1.4rem;
-  bottom: 5.5rem;
+  top: 10.6rem;
   z-index: 10;
 }
 .point-L{
@@ -716,4 +815,40 @@ html, body {
 .swiper{
   width: 10.8rem;
   height: 17rem;
+}
+.raiders-pagination{
+  position: absolute;
+  bottom: 3rem !important;
+  text-align: center;
+}
+.raiders-pagination .swiper-pagination-bullet{
+  margin: 0 auto;
+  width: 0.5rem;
+  height: 0.5rem;
+  background: none;
+  background: url(../images/point-nomal.png) no-repeat;
+  background-size: 100% 100%;
+}
+.raiders-pagination .swiper-pagination-bullet-active{
+  background: url(../images/point-active.png) no-repeat;
+  background-size: 100% 100%;
+}
+
+/*视频播放*/
+.movie{
+  width: 4.4rem;
+  height: 4.4rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.movie #diamond-story{
+  width: 6.47rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  display: none;
 }
