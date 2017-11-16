@@ -50,11 +50,11 @@ $(function () {
   })
 
   // 弹框
-  $(".card-pos ul").on("click", function(){
-    var idS = $(".card-pos ul").index(this);
-    $(".swiper-slide-5").addClass("active");
+  // $(".card-pos ul").on("click", function(){
+  //   var idS = $(".card-pos ul").index(this);
+  //   $(".swiper-slide-5").addClass("active");
 
-  })
+  // })
 
 
   // 轮播图  第六屏
