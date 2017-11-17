@@ -101,16 +101,15 @@ $(function () {
 
   // 第二屏手风琴
 
-  $(".feature ul li").on("mouseenter", function(){
-    $(this).siblings().addClass("active")
-    $(this).addClass("hover")
+  $(".feature ul li").on("click", function(){
+    if($(this).hasClass("hover")){
+      $(this).removeClass("hover")
+      $(this).siblings().removeClass("active")
+    }else{
+        $(this).siblings().addClass("active")
+        $(this).addClass("hover")
+    }
   })
-
-  $(".feature ul li").on("mouseleave", function(){
-    $(this).siblings().removeClass("active")
-    $(this).removeClass("hover")
-  })
-
 
 
 

@@ -124,7 +124,7 @@ html, body {
   overflow: hidden;
 }
 .f-one{
-  top: -12.6rem;
+  top: -57%;
   height: 40%;
   background: url(../images/f1.png) no-repeat center/cover;
   z-index: 20;
@@ -135,7 +135,7 @@ html, body {
   z-index: 10;
 }
 .f-three{
-  bottom: -12.6rem;
+  bottom: -57%;
   background: url(../images/f3.png) no-repeat center/cover;
   z-index: 20;
 }
@@ -146,23 +146,25 @@ html, body {
 }
 .f-one span{
   left: 0.4rem;
-  top: 13rem;
+  top: 65%;
   background: url(../images/logo-s1.png) no-repeat;
 }
 .f-two span{
-  top: 6.6rem;
+  top: 33%;
   right: 0.4rem;
   background: url(../images/logo-s2.png) no-repeat;
 }
 .f-three span{
   left: 0.4rem;
-  bottom: 13rem;
+  bottom: 65%;
   background: url(../images/logo-s3.png) no-repeat;
 }
 .slide-bg span{
   display: block;
-  width: 6.2rem;
-  height: 6.8rem;
+  /*width: 6.2rem;
+  height: 6.8rem;*/
+  width: 50%;
+  height: 34%;
   background-size: 100% 100%;
   position: absolute;
 }
@@ -192,10 +194,10 @@ html, body {
   bottom: -1.6rem;
 }
 .f-three.active{
-  bottom: -18rem;
+  bottom: -82%;
 }
 .f-one.active{
-  top: -18rem;
+  top: -82%;
 }
 .f-two.active span{
   top: 17.4rem;
@@ -209,14 +211,21 @@ html, body {
 }
 .pic-scroll{
   margin: 1.2rem auto 0 auto;
-  width: 9rem;
-  height: 4.6rem;
+  /*width: 9rem;
+  height: 4.6rem;*/
+  width: 74%;
+  height: 19%;
   position: relative;
+}
+.pic-scroll ul{
+  height: 100%;
 }
 .pic-scroll .c{
   margin: 0 auto;
-  width: 9rem;
-  height: 4.6rem;
+  /*width: 9rem;
+  height: 4.6rem;*/
+  width: 100%;
+  height: 100%;
   background: url(../images/center-bg.png) no-repeat;
   background-size: 100% 100%;
 }
@@ -231,8 +240,10 @@ html, body {
   background-size: 100% 100%;
 }
 .pic-scroll .L,.pic-scroll .r{
-  height: 5.6rem;
-  width: 0.4rem;
+  /*height: 5.6rem;
+  width: 0.4rem;*/
+  height: 122%;
+  width: 4%;
   position: absolute;
   top: -0.5rem;
 }
@@ -261,9 +272,9 @@ html, body {
 }
 .pic-scroll .txt{
   position: absolute;
-  top: .35rem;
+  top: 7%;
   width: 100%;
-  height: 3rem;
+  height: 100%;
 }
 .pic-scroll .txt .img {
   width: 1rem;
@@ -291,7 +302,7 @@ html, body {
 .pic-scroll .txt .txt-bor{
   width: 100%;
   position: absolute;
-  top: 0;
+  top: -5%;
   left: 0;
   display: none;
 }
@@ -312,21 +323,27 @@ html, body {
   transform: translate(-50%,-50%);
 }
 .model .li1{
-  width: 7.2rem;
-  height: 8rem;
+  /*width: 7.2rem;
+  height: 8rem;*/
+  width: 52%;
+  height: 33%;
   border: none;
   border-radius: 50%;
   background: url(../images/li1.png);
   background-size: 100% 100%;
 }
 .model .li2{
-  width: 11.4rem;
-  height: 11.4rem;
+  /*width: 11.4rem;
+  height: 11.4rem;*/
+  width: 92%;
+  height: 52%;
   z-index: 2;
 }
 .model .li3{
-  width: 16rem;
-  height: 16rem;
+  /*width: 16rem;
+  height: 16rem;*/
+  width: 127%;
+  height: 73%;
   border: 1px dashed #fed472;
   z-index: 1;
 }
@@ -441,32 +458,44 @@ html, body {
   position: relative;
 }
 .card-logo-box .c1{
-  top: 4.8rem;
-  left: 5rem;
+  /*top: 4.8rem;
+  left: 5rem;*/
+  top: 29%;
+  left: 40%;
 }
 .card-logo-box .c2{
-  bottom: 2rem;
-  left: 1.6rem;
+  /*bottom: 2rem;
+  left: 1.6rem;*/
+  bottom: 12%;
+  left: 13%;
 }
 .card-logo-box .c3{
-  bottom: 2rem;
-  right: 1.6rem;
+  /*bottom: 2rem;
+  right: 1.6rem;*/
+  bottom: 12%;
+  right: 13%;
 }
 .card-logo-box .c1 .sl{
-  bottom: -2.4rem;
-  left: -3.1rem;
+  /*bottom: -2.4rem;
+  left: -3.1rem;*/
+  bottom: -60%;
+  left: -111%;
   background: url(../images/sl1.png);
   background-size: 100% 100%;
 }
 .card-logo-box .c2 .sl{
-  bottom: -2.4rem;
-  left: -1.84rem;
+  /*bottom: -2.4rem;
+  left: -1.84rem;*/
+  bottom: -60%;
+  left: -68%;
   background: url(../images/sl2.png);
   background-size: 100% 100%;
 }
 .card-logo-box .c3 .sl{
-  bottom: -2.4rem;
-  left: -4.3rem;
+  /*bottom: -2.4rem;
+  left: -4.3rem;*/
+  bottom: -59%;
+  left: -157%;
   background: url(../images/sl3.png);
   background-size: 100% 100%;
 }
@@ -484,27 +513,38 @@ html, body {
   background-size: 100% 100%;
 }
 .card-logo{
-  width: 2.8rem;
-  height: 4rem;
+  /*width: 2.8rem;
+  height: 4rem;*/
+  width: 22%;
+  height: 24%;
   position: absolute;
 }
 .card-logo .sl{
-  width: 8.8rem;
-  height: 7.4rem;
+  /*width: 8.8rem;
+  height: 7.4rem;*/
+  width: 326%;
+  height: 187%;
 }
 .card-logo .sc{
-  width: 2.8rem;
-  height: 4rem;
+  /*width: 2.8rem;
+  height: 4rem;*/
+  width: 100%;
+  height: 100%;
 }
 .card-logo span{
   display: block;
   position: absolute;
 }
 .card-logo .sr{
-  width: 5.6rem;
-  height: 5.6rem;
-  bottom: -2.6rem;
-  left: -1.5rem;
+  /*width: 5.6rem;
+  height: 5.6rem;*/
+  width: 204%;
+  height: 142%;
+  bottom: -66%;
+  left: -55%;
+  /*bottom: -2.6rem;
+  left: -1.5rem;*/
+  
 }
 .card-logo-box .c1 .sr{
   background: url(../images/halo1.png) no-repeat;
@@ -520,17 +560,25 @@ html, body {
 }
 
 .card-content{
-  padding: 1rem 0.6rem;
+  /*padding: 1rem 0.6rem;
   width: 11.7rem;
-  height: 5rem;
+  height: 5rem;*/
+  padding: 8% 6%;
+  width: 95%;
+  height: 23%;
   margin: 0.12rem auto 0 auto;
   background: url(../images/scroll.png) no-repeat;
   background-size: 100% 100%;
 }
 .card-pos{
   position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
 }
 .card-content ul{
+  width: 100%;
+  height: 100%;
   overflow: hidden;
   position: absolute;
   top: 0;
@@ -547,8 +595,10 @@ html, body {
 
 .card-content li{
   float: left;
-  width: 1.86rem;
-  height: 3rem;
+  /*width: 1.86rem;
+  height: 3rem;*/
+  height: 97%;
+  width: 17%;
   margin: 0 0.12rem;
 }
 .card-content .card1 li:nth-child(1){
@@ -714,9 +764,6 @@ html, body {
 
 
 
-
-
-
 /*第六屏*/
 .swiper-slide-6{
   background: url(../images/slideBg6.png) no-repeat;
@@ -732,10 +779,14 @@ html, body {
   position: absolute;
 }
 .R-sample{
-  top: 2rem;
+  /*top: 2rem;
   right: -3.3rem;
   width: 5.6rem;
-  height: 11rem;
+  height: 11rem;*/
+  width: 134%;
+  height: 49%;
+  top: 8%;
+  right: -81%;
 }
 .w-slide-1 .R-sample{
   background: url(../images/phone-icon1.png) no-repeat;
@@ -750,10 +801,14 @@ html, body {
   background-size: 100% 100%;
 }
 .L-sample{
-  bottom: 4.8rem;
+  /*bottom: 4.8rem;
   left: -3.3rem;
   width: 7.2rem;
-  height: 11.4rem;
+  height: 11.4rem;*/
+  width: 174%;
+  height: 52%;
+  bottom: 22%;
+  left: -80%;
   background: url(../images/phone-txt.png) no-repeat;
   background-size: 100% 100%;
 }
@@ -765,9 +820,11 @@ html, body {
   border-bottom: 1px solid #622602;
 }
 .L-sample .box{
+  position: absolute;
+  width: 74%;
   margin: 0 1rem;
   height: 9rem;
-  overflow-y: scroll;
+  overflow: auto;
 }
 .L-sample h3,.L-sample h5,.L-sample h6{
   color: #622602;
@@ -800,9 +857,12 @@ html, body {
 
 .competition-box>span{
   display: block;
-  width: 0.8rem;
+  /*width: 0.8rem;
   height: 1.4rem;
-  top: 10.6rem;
+  top: 10.6rem;*/
+  width: 7%;
+  height: 6.8%;
+  top: 46%;
   z-index: 10;
 }
 .point-L{
@@ -836,8 +896,10 @@ html, body {
 
 /*轮播*/
 .swiper{
-  width: 10.8rem;
-  height: 17rem;
+  /*width: 10.8rem;
+  height: 17rem;*/
+  width: 200%;
+  height: 77%;
 }
 .raiders-pagination{
   position: absolute;
@@ -874,4 +936,26 @@ html, body {
   right: 0;
   margin: auto;
   display: none;
+}
+
+
+@media screen and (max-width: 320px){
+  .model .li2 .plot{
+    width: 1.4rem;
+    height: 1.4rem;
+  }
+  .pic-scroll .txt{
+    top: 5%;
+  }
+  .pic-scroll h4,.pic-scroll p{
+    font-size: 12px;
+  }
+  .pic-scroll .txt .img{
+    width: 0.6rem;
+    height: 0.8rem;
+  }
+  .pic-scroll h4{
+    margin: 0 auto;
+  }
+  
 }
