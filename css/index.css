@@ -261,9 +261,32 @@ html, body {
 }
 .pic-scroll .txt{
   position: absolute;
-  bottom: 0rem;
+  top: .35rem;
   width: 100%;
   height: 3rem;
+}
+.pic-scroll .txt .img {
+  width: 1rem;
+  height: 1.2rem;
+  margin: 0 auto;
+}
+.pic-scroll .txt .txt-bor:nth-child(1) .img {
+  background: url(../images/icon-tongguan-open.png) no-repeat center/contain;
+}
+.pic-scroll .txt .txt-bor:nth-child(2) .img {
+  background: url(../images/icon-gongxun-open.png) no-repeat center/contain;
+}
+.pic-scroll .txt .txt-bor:nth-child(3) .img {
+  background: url(../images/icon-miyao-open.png) no-repeat center/contain;
+}
+.pic-scroll .txt .txt-bor:nth-child(4) .img {
+  background: url(../images/icon-nengliang-open.png) no-repeat center/contain;
+}
+.pic-scroll .txt .txt-bor:nth-child(5) .img {
+  background: url(../images/icon-weijifen-open.png) no-repeat center/contain;
+}
+.pic-scroll .txt .txt-bor:nth-child(6) .img {
+  background: url(../images/icon-jimou-open.png) no-repeat center/contain;
 }
 .pic-scroll .txt .txt-bor{
   width: 100%;
