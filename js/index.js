@@ -108,6 +108,7 @@ $(function () {
     }else{
       if($(this).hasClass("active")){
         $(this).siblings().removeClass("hover")
+        $(this).siblings().removeClass("active")
         $(this).removeClass("active")
       }else{
         $(this).siblings().addClass("active")
