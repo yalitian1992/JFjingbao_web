@@ -646,7 +646,7 @@ width: 100%;
   background: url(../images/card3-4.png) no-repeat;
   background-size: 100% 100%;
 }
-.card-content .card3 li:nth-child(4){
+.card-content .card3 li:nth-child(5){
   background: url(../images/card3-5.png) no-repeat;
   background-size: 100% 100%;
 }
@@ -659,9 +659,12 @@ width: 100%;
   left: 0;
   width: 100%;
   height: 100%;
-  display: none;
+  /* display: none; */
   background: url(../images/slideBg5.png) no-repeat;
   background-size: 100% 100%;
+}
+.detailPop .swiper-button-disabled {
+  opacity: .3;
 }
 .detailPop .close-btn {
   width: 1rem;
@@ -753,11 +756,13 @@ width: 100%;
   z-index: 100;
 }
 .card-left-pot{
+  top: 3.5rem;
   left: 1.9rem;
   background: url(../images/L6.png) no-repeat;
   background-size: 100% 100%;
 }
 .card-right-pot{
+  top: 3.5rem;
   right: 1.9rem;
   background: url(../images/R6.png) no-repeat;
   background-size: 100% 100%;
@@ -768,14 +773,78 @@ width: 100%;
     height: 5.5rem;
     margin: 0 auto;
     margin-top: 1.2rem;
-    background: url(../images/card-attack-juedou-big.png) no-repeat center/contain;
 }
 
+.attack-slide .pai1 {
+    background: url(../images/card-attack-wanduo-big.png) no-repeat center/contain;
+}
+.attack-slide .pai2 {
+    background: url(../images/card-attack-duoyao-big.png) no-repeat center/contain;
+}
+.attack-slide .pai3 {
+    background: url(../images/card-attack-juedou-big.png) no-repeat center/contain;
+}
+.attack-slide .pai4 {
+    background: url(../images/card-attack-pofang-big.png) no-repeat center/contain;
+}
+
+.defense-slide .pai1 {
+    background: url(../images/card-defanse-zhuanshang-big.png) no-repeat center/contain;
+}
+.defense-slide .pai2 {
+    background: url(../images/card-defanse-huanshi-big.png) no-repeat center/contain;
+}
+.defense-slide .pai3 {
+    background: url(../images/card-defanse-xiaohao-big.png) no-repeat center/contain;
+}
+
+.control-slide .pai1 {
+    background: url(../images/card-control-chihuan-big.png) no-repeat center/contain;
+}
+.control-slide .pai2 {
+    background: url(../images/card-control-jingu-big.png) no-repeat center/contain;
+}
+.control-slide .pai3 {
+    background: url(../images/card-control-shikong-big.png) no-repeat center/contain;
+}
+.control-slide .pai4 {
+    background: url(../images/card-control-toutian-big.png) no-repeat center/contain;
+}
+.control-slide .pai5 {
+    background: url(../images/card-control-zengxiao-big.png) no-repeat center/contain;
+}
+
+.detail-slide .guang2{
+    top: 2.5rem;
+    position: absolute;
+    width: 8rem;
+    height: 8rem;
+    bottom: -1.2rem;
+    left: 2.4rem;
+    background-size: 100% 100%;
+    z-index: 10;
+}
+
+.attack-slide .guang1 {
+
+}
+.attack-slide .guang2 {   
+    background: url(../images/halo1.png) no-repeat center/contain;
+}
+.defense-slide .guang2 {   
+    background: url(../images/halo2.png) no-repeat center/contain;
+}
+.control-slide .guang3 {   
+    background: url(../images/halo3.png) no-repeat center/contain;
+}
 .card-introduce{
+    width: 10rem;
+    left: -102%;
+    position: absolute;
     color: #eba363;
     font-size: 0.54rem;
     padding: 0.4rem 1.2rem;
-    padding-top: 5rem;
+    padding-top: 4rem;
 }
 .card-introduce li{
   margin-bottom: 0.4rem;
@@ -790,6 +859,35 @@ width: 100%;
   color: whitesmoke;
 }
 
+.card-introduce li:last-child {
+  width: 2.9rem;
+  height: 1.6rem;
+  background: #000;
+  position: relative;
+}
+.card-introduce li:last-child .bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 2.9rem;
+  height: 1.34rem;
+  background: url(../images/movie-bg.png) no-repeat center/contain;
+}
+
+.card-introduce li:last-child .play-btn{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 2.9rem;
+  height: 1.34rem;
+  background: url(../images/playbtn.png) no-repeat center/contain;
+}
 
 
 
@@ -934,7 +1032,7 @@ width: 100%;
   bottom: 3rem !important;
   text-align: center;
 }
-.raiders-pagination .swiper-pagination-bullet{
+.swiper-pagination-bullet{
   margin: 0 auto;
   width: 0.5rem;
   height: 0.5rem;
@@ -942,9 +1040,12 @@ width: 100%;
   background: url(../images/point-nomal.png) no-repeat;
   background-size: 100% 100%;
 }
-.raiders-pagination .swiper-pagination-bullet-active{
+.swiper-pagination-bullet-active{
   background: url(../images/point-active.png) no-repeat;
   background-size: 100% 100%;
+}
+.swiper-pagination-clickable {
+  text-align: center;
 }
 
 /*视频播放*/

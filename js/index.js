@@ -58,39 +58,10 @@ $(function () {
     $(".card-content ul:nth-child("+ (idx+1) +")").addClass("active").siblings().removeClass("active");
   })
 
-  // 弹框
-    $(".card-pos ul li").on("click", function(){
-      var idS = $(".card-pos ul").index(this);
 
-      $(".detailPop").show();
-    })
-  //关闭弹框
-  $(".detailPop .close-btn").on("click", function(){
-    console.log(2)
-      $(".detailPop").hide();
-  })
 
-  // 轮播图  第六屏
-    var hehe = new Swiper('#swiper-container-2', {
-        direction: 'horizontal',
-       /* paginationBulletRender: function () {
-            return '';
-        },*/
-        pagination: '.raiders-pagination',
-        paginationClickable: true,
-        nextButton: '.swiper-button-next',
-        prevButton: '.swiper-button-prev',
-        effect: 'coverflow',
-        slidesPerView: 3,
-        centeredSlides: true,
-        coverflow: {
-            rotate: 0,
-            stretch: -180,
-            depth: 60,
-            modifier: 2,
-            slideShadows: false
-        },
-    })
+
+
 
 
 
@@ -102,10 +73,10 @@ $(function () {
        /* paginationBulletRender: function () {
             return '';
         },*/
-        pagination: '.raiders-pagination',
         paginationClickable: true,
-        nextButton: '.swiper-button-next',
-        prevButton: '.swiper-button-prev',
+        // pagination: '.attact-pagination',
+        nextButton: '.attact-button-next',
+        prevButton: '.attact-button-prev',
         effect: 'coverflow',
         slidesPerView: 3,
         centeredSlides: true,
@@ -119,13 +90,14 @@ $(function () {
   })
 
   //  防御类详情轮播
-  var defenseSwiper =  new Swiper('#defense-slide', {
+  var defenseSwiper =  new Swiper('.defense-slide', {
     direction: 'horizontal',
-    paginationBulletRender: function () {
-      return '';
-    },
-    nextButton: '.swiper-button-next',
-    prevButton: '.swiper-button-prev',
+    // paginationBulletRender: function () {
+    //   return '';
+    // },
+    // pagination: '.defense-pagination',
+    nextButton: '.defense-button-next',
+    prevButton: '.defense-button-prev',
     effect: 'coverflow',
     slidesPerView: 3,
     centeredSlides: true,
@@ -138,13 +110,14 @@ $(function () {
     },
   })
   //  控制类详情轮播
-  var controlSwiper =  new Swiper('#control-slide', {
+  var controlSwiper =  new Swiper('.control-slide', {
     direction: 'horizontal',
-    paginationBulletRender: function () {
-      return '';
-    },
-    nextButton: '.swiper-button-next',
-    prevButton: '.swiper-button-prev',
+    // paginationBulletRender: function () {
+    //   return '';
+    // },
+    // pagination: '.control-pagination',
+    nextButton: '.control-button-next',
+    prevButton: '.control-button-prev',
     effect: 'coverflow',
     slidesPerView: 3,
     centeredSlides: true,
@@ -156,6 +129,70 @@ $(function () {
       slideShadows: false
     },
   })
+
+
+    // 弹框
+    $("ul.card1 li").on("click", function(){
+      var idx = $("ul.card1 li").index(this);
+      attackSwiper.slideTo(idx, 1000, false);
+
+      $(".detailPop").show();
+      $(".attack-slide").show();
+      $(".attack-slide").siblings('.detail-slide').hide();
+
+    })
+    $("ul.card2 li").on("click", function(){
+      var idx = $("ul.card2 li").index(this);
+      defenseSwiper.slideTo(idx, 1000, false);
+
+      $(".detailPop").show();
+      $(".defense-slide").show();
+      $(".defense-slide").siblings('.detail-slide').hide();
+    })
+    $("ul.card3 li").on("click", function(){
+      var idx = $("ul.card3 li").index(this);
+      controlSwiper.slideTo(idx, 1000, false);
+
+      $(".detailPop").show();
+      $(".control-slide").show();
+      $(".control-slide").siblings('.detail-slide').hide();
+    })
+
+
+
+    $(".detailPop").hide(); //要在swiper初始化之后隐藏， 否则seiper初始化会失败
+
+
+
+
+    //关闭弹框
+    $(".detailPop .close-btn").on("click", function(){
+        $(".detailPop").hide();
+    })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   // 第二屏手风琴
 
@@ -185,6 +222,30 @@ $(function () {
         nextButton: '.swiper-button-next',
         prevButton: '.swiper-button-prev',
     })
+
+
+  // 轮播图  第六屏
+    var hehe = new Swiper('#swiper-container-2', {
+        direction: 'horizontal',
+       /* paginationBulletRender: function () {
+            return '';
+        },*/
+        pagination: '.raiders-pagination',
+        paginationClickable: true,
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        effect: 'coverflow',
+        slidesPerView: 3,
+        centeredSlides: true,
+        coverflow: {
+            rotate: 0,
+            stretch: -180,
+            depth: 60,
+            modifier: 2,
+            slideShadows: false
+        },
+    })
+
 
 
   // 视频播放
