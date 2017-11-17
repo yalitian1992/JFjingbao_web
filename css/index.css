@@ -814,6 +814,26 @@ width: 100%;
     background: url(../images/card-control-zengxiao-big.png) no-repeat center/contain;
 }
 
+.attack-slide .guang1 {
+    top: 1.5rem;
+    position: absolute;
+    width: 100%;
+    height: 8rem;
+    bottom: -1.2rem;
+    left: 0;
+    background-size: 100% 100%;
+    z-index: -1;
+}
+
+.attack-slide .guang1 {   
+    background: url(../images/trick-detail-light-attack.png) no-repeat center/contain;
+}
+.defense-slide .guang1 {   
+    background: url(../images/trick-detail-light-defense.png) no-repeat center/contain;
+}
+.control-slide .guang1 {   
+    background: url(../images/trick-detail-light-control.png) no-repeat center/contain;
+}
 .detail-slide .guang2{
     top: 2.5rem;
     position: absolute;
@@ -825,16 +845,13 @@ width: 100%;
     z-index: 10;
 }
 
-.attack-slide .guang1 {
-
-}
 .attack-slide .guang2 {   
     background: url(../images/halo1.png) no-repeat center/contain;
 }
 .defense-slide .guang2 {   
     background: url(../images/halo2.png) no-repeat center/contain;
 }
-.control-slide .guang3 {   
+.control-slide .guang2 {   
     background: url(../images/halo3.png) no-repeat center/contain;
 }
 .card-introduce{
