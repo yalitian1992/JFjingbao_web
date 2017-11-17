@@ -23,6 +23,7 @@ html, body {
 .home {
 	background: url(../images/indexBG.png) no-repeat center/cover;
   position: relative;
+  overflow: hidden;
 }
 .homeleft-bg{
   width: 60%;
@@ -114,6 +115,11 @@ html, body {
 }
 
 /* 游戏特色 */
+.feature {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
 .feature ul,.slide-bg{
   width: 100%;
   height: 100%;
@@ -208,6 +214,7 @@ html, body {
 .swiper-slide-3{
   background: url(../images/slideBg3.png) no-repeat;
   background-size:100% 100%;
+  overflow: hidden;
 }
 .pic-scroll{
   margin: 1.2rem auto 0 auto;
@@ -443,16 +450,9 @@ html, body {
   background: url(../images/slideBg4.png) no-repeat;
   background-size: 100% 100%;
   /*position: relative;*/
+  overflow: hidden;
 }
-/*.swiper-slide-5{
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: none;
-}*/
-.swiper-slide-5.active{
-  display: block;
-}
+
 .card-logo-box{
   height: 75%;
   position: relative;
@@ -650,7 +650,8 @@ html, body {
 
 
 /*第五屏*/
-.swiper-slide-5{
+.detail-pop{
+  display: none;
   background: url(../images/slideBg5.png) no-repeat;
   background-size: 100% 100%;
 }
@@ -768,6 +769,7 @@ html, body {
 .swiper-slide-6{
   background: url(../images/slideBg6.png) no-repeat;
   background-size: 100% 100%;
+  overflow: hidden;
 }
 .competition-box{
   position: relative;
@@ -800,17 +802,18 @@ html, body {
   background: url(../images/phone-icon3.png) no-repeat;
   background-size: 100% 100%;
 }
-.L-sample{
-  /*bottom: 4.8rem;
-  left: -3.3rem;
-  width: 7.2rem;
-  height: 11.4rem;*/
-  width: 174%;
-  height: 52%;
-  bottom: 22%;
-  left: -80%;
-  background: url(../images/phone-txt.png) no-repeat;
+.w-slide-4 .R-sample{
+  background: url(../images/phone-icon4.png) no-repeat;
   background-size: 100% 100%;
+}
+.L-sample{
+    width: 9rem;
+    height: 68%;
+    bottom: 22%;
+    left: -80%;
+    background: url(../images/phone-txt.png) no-repeat;
+    background-size: 100% 100%;
+    background-size: 100% 100%;
 }
 .L-sample h3{
   text-align: center;
@@ -820,11 +823,9 @@ html, body {
   border-bottom: 1px solid #622602;
 }
 .L-sample .box{
-  position: absolute;
-  width: 74%;
-  margin: 0 1rem;
-  height: 9rem;
-  overflow: auto;
+    position: absolute;
+    width: 74%;
+    margin: 0 1rem;
 }
 .L-sample h3,.L-sample h5,.L-sample h6{
   color: #622602;
