@@ -36,6 +36,15 @@ $(function () {
         }
     })
 
+  // 首屏 下载
+  $(".downloadBtn .btn").on("click", function(){
+    if($(this).hasClass("iosBtn")){
+      $(this).attr("href","https://itunes.apple.com/cn/app/%E9%9B%86%E5%88%86%E7%AB%9E%E5%AE%9D/id1253939312?mt=8")
+    }else{
+      $(this).attr("href","https://itunes.apple.com/cn/app/%E9%9B%86%E5%88%86%E7%AB%9E%E5%AE%9D/id1253939312?mt=8")
+    }
+  })
+
   // 第三屏 切换
   $(".model li.li2 span").on("click", function(){
     var idY = $(".model .li2>span").index(this);
@@ -115,10 +124,7 @@ $(function () {
         $(this).addClass("hover")
       }
     }
-
   })
-
-
 
 
 

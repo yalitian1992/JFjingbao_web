@@ -442,14 +442,14 @@ html, body {
 .swiper-slide-4{
   background: url(../images/slideBg4.png) no-repeat;
   background-size: 100% 100%;
-  position: relative;
+  /*position: relative;*/
 }
-.swiper-slide-5{
+/*.swiper-slide-5{
   position: absolute;
   top: 0;
   left: 0;
   display: none;
-}
+}*/
 .swiper-slide-5.active{
   display: block;
 }
@@ -714,7 +714,7 @@ html, body {
   width: 3.2rem;
   height: 5.4rem;
   bottom: 2.6rem;
-  left: 4.6rem;
+  left: 0.48rem;
   background: url(../images/card1-11.png) no-repeat;
   background-size: 100% 100%;
 }
