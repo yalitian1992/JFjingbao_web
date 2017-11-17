@@ -106,10 +106,17 @@ $(function () {
       $(this).removeClass("hover")
       $(this).siblings().removeClass("active")
     }else{
+      if($(this).hasClass("active")){
+        $(this).siblings().removeClass("hover")
+        $(this).removeClass("active")
+      }else{
         $(this).siblings().addClass("active")
         $(this).addClass("hover")
+      }
     }
+
   })
+
 
 
 
