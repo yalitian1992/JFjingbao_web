@@ -59,12 +59,16 @@ $(function () {
   })
 
   // 弹框
-  // $(".card-pos ul").on("click", function(){
-  //   var idS = $(".card-pos ul").index(this);
-  //   $(".swiper-slide-5").addClass("active");
+    $(".card-pos ul li").on("click", function(){
+      var idS = $(".card-pos ul").index(this);
 
-  // })
-
+      $(".detailPop").show();
+    })
+  //关闭弹框
+  $(".detailPop .close-btn").on("click", function(){
+    console.log(2)
+      $(".detailPop").hide();
+  })
 
   // 轮播图  第六屏
     var hehe = new Swiper('#swiper-container-2', {
@@ -88,8 +92,53 @@ $(function () {
         },
     })
 
-  //  轮播  第五屏
-  new Swiper('#swiper-container-5', {
+
+
+
+
+  //  攻击类详情轮播
+  var attackSwiper =  new Swiper('.attack-slide', {
+        direction: 'horizontal',
+       /* paginationBulletRender: function () {
+            return '';
+        },*/
+        pagination: '.raiders-pagination',
+        paginationClickable: true,
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        effect: 'coverflow',
+        slidesPerView: 3,
+        centeredSlides: true,
+        coverflow: {
+            rotate: 0,
+            stretch: -180,
+            depth: 60,
+            modifier: 2,
+            slideShadows: false
+        },
+  })
+
+  //  防御类详情轮播
+  var defenseSwiper =  new Swiper('#defense-slide', {
+    direction: 'horizontal',
+    paginationBulletRender: function () {
+      return '';
+    },
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev',
+    effect: 'coverflow',
+    slidesPerView: 3,
+    centeredSlides: true,
+    coverflow: {
+      rotate: 0,
+      stretch: -180,
+      depth: 60,
+      modifier: 2,
+      slideShadows: false
+    },
+  })
+  //  控制类详情轮播
+  var controlSwiper =  new Swiper('#control-slide', {
     direction: 'horizontal',
     paginationBulletRender: function () {
       return '';
