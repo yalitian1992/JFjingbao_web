@@ -250,17 +250,12 @@ $(function () {
 
   // 视频播放
   $(".video-button").on("click",function(event){
-    console.log(666)
-    $(".play-nomal").css({
-      zIndex: '-1'
-    });
-    // $(".movie #diamond-story").show(400);
-    $(".movie #diamond-story")[0].play();
-    /*if($("#music")[0].paused == false){
-      $("#music")[0].pause();
-    }*/
+
+    var src = "media/" + $(this).data("videoname") + ".mp4"
+    $("video").attr("src", src)
+    $("video")[0].play();
     //让视频全屏自动全屏播放
-    launchFullScreen($(".movie #diamond-story")[0]);
+    launchFullScreen($("video")[0]);
     // screen.orientation.lock('landscape');
   });
 
