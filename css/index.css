@@ -973,7 +973,7 @@ width: 100%;
 }
 .L-sample{
     width: 9rem;
-    height: 72%;
+    height: 81%;
     bottom: 16%;
     left: -80%;
     background: url(../images/phone-txt.png) no-repeat;
@@ -1104,6 +1104,21 @@ width: 100%;
   right: 0;
   margin: auto;
   display: none;
+}
+
+
+.icp {
+  position: absolute;
+  width: 100%;
+  height: .5rem;
+  line-height: .5rem;
+  text-align: center;
+  left: 0;
+  bottom: .2rem;
+  font-size: .14rem;
+  z-index: 55;
+  color: #fff;
+  opacity: .8;
 }
 
 
