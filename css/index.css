@@ -889,13 +889,15 @@ width: 100%;
     color: #eba363;
     font-size: 0.54rem;
     padding: 0.4rem 1.2rem;
-    padding-top: 3.2rem;
+    padding-top: 5.3rem;
 }
 .card-introduce li{
-  margin-bottom: 0.4rem;
+    /* font-size: .4rem; */
+  margin-bottom: 0.25rem;
 }
 .card-introduce li p{
-  line-height: 0.74rem;
+    line-height: 0.64rem;
+    font-size: .4rem;
 }
 .max-size{
   font-size: 0.68rem;
