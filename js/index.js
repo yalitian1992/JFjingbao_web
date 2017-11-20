@@ -267,7 +267,7 @@ $(function () {
 
     var src = "media/" + $(this).data("videoname") + ".mp4"
     $("video").attr("src", src)
-    $('.loading').show();
+    // $('.loading').show();
     $("video")[0].play();
     //让视频全屏自动全屏播放
     launchFullScreen($("video")[0]);
@@ -275,12 +275,12 @@ $(function () {
   });
 
 
-  $('video')[0].addEventListener('timeupdate',function(){
-    console.log($('video')[0].readyState)
-    if($('video')[0].readyState == 4){
-      $('.loading').hide();
-    }
-  })
+  // $('video')[0].addEventListener('timeupdate',function(){
+  //   console.log($('video')[0].readyState)
+  //   if($('video')[0].readyState == 4){
+  //     $('.loading').hide();
+  //   }
+  // })
 
 
 
