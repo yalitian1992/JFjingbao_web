@@ -275,6 +275,13 @@ $(function () {
 
 
 
+  $('video')[0].addEventListener('loadstart',function(){
+      $('.loading').show();
+      })
+      $('video')[0].addEventListener('loadedmetadata',function(){
+          $('.loading').hide();
+  })
+
 
 
     //µÚÈýÆÁµÄhover
