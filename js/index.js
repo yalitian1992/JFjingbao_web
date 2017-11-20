@@ -267,17 +267,18 @@ $(function () {
 
     var src = "media/" + $(this).data("videoname") + ".mp4"
     $("video").attr("src", src)
-    // $('.loading').show();
+    $('.loading').show();
     $("video")[0].play();
     //让视频全屏自动全屏播放
-    launchFullScreen($("video")[0]);
     // screen.orientation.lock('landscape');
   });
 
 
-  $('video')[0].addEventListener('canplaythrough',function(){
+  $('video')[0].addEventListener('oncanplay',function(){
      console.log($('video')[0].readyState)
 
+      $("video")[0].play();
+      launchFullScreen($("video")[0]);
       $('.loading').hide();
   })
 
