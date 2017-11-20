@@ -980,11 +980,12 @@ width: 100%;
     background-size: 100% 100%;
 }
 .L-sample h3{
-  text-align: center;
-  font-size: 0.6rem;
-  margin: 0.6rem 1rem 0 1rem;
-  padding: 0.3rem 0;
-  border-bottom: 1px solid #622602;
+    text-align: center;
+    font-size: 0.6rem;
+    margin: 0.6rem 1rem 0 1rem;
+    padding: 0.3rem 0;
+    padding-top: .8rem;
+    border-bottom: 1px solid #622602;
 }
 .L-sample .box{
     position: absolute;
@@ -1115,7 +1116,7 @@ width: 100%;
   text-align: center;
   left: 0;
   bottom: .2rem;
-  font-size: .14rem;
+  font-size: .35rem;
   z-index: 55;
   color: #fff;
   opacity: .8;
