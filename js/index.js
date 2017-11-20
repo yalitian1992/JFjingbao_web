@@ -275,7 +275,8 @@ $(function () {
 
 
   $('video')[0].addEventListener('oncanplay',function(){
-     console.log($('video')[0].readyState)
+
+      alert("可以播放了")
 
       $("video")[0].play();
       launchFullScreen($("video")[0]);
