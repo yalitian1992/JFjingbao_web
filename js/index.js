@@ -276,6 +276,7 @@ $(function () {
 
 
   $('video')[0].addEventListener('timeupdate',function(){
+    console.log($('video')[0].readyState)
     if($('video')[0].readyState == 4){
       $('.loading').hide();
     }
