@@ -41,7 +41,7 @@ $(function () {
     if($(this).hasClass("iosBtn")){
       $(this).attr("href","https://itunes.apple.com/cn/app/%E9%9B%86%E5%88%86%E7%AB%9E%E5%AE%9D/id1253939312?mt=8")
     }else{
-      $(this).attr("href","https://itunes.apple.com/cn/app/%E9%9B%86%E5%88%86%E7%AB%9E%E5%AE%9D/id1253939312?mt=8")
+      $(this).attr("href","http://action.ihaveu.com/downloadapp/card/android/CardGame.apk")
     }
   })
 
