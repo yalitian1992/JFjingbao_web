@@ -36,12 +36,27 @@ $(function () {
         }
     })
 
+
+  /*判断微信或不是微信*/
+    function isWachat (isisWachat, notWachat) {
+    var ua = window.navigator.userAgent.toLowerCase();
+    if (ua.match(/MicroMessenger/i) == 'micromessenger') {
+      isisWachat();
+    } else {
+      notWachat();
+    }
+  }
+
   // 首屏 下载
   $(".downloadBtn .iosBtn").on("click", function(){
     window.open("https://itunes.apple.com/cn/app/%E9%9B%86%E5%88%86%E7%AB%9E%E5%AE%9D/id1253939312?mt=8")
   })
   $(".downloadBtn .androidBtn").on("click", function(){
-    window.open("http://action.ihaveu.com/downloadapp/card/android/CardGame.apk")
+    isWachat(function(){
+      alert("微信内置浏览器暂不支持，请使用其他浏览器下载！")
+    },function(){
+      window.open("http://action.ihaveu.com/downloadapp/card/android/CardGame.apk")
+    })
   })
 
   // 第三屏 切换
