@@ -53,10 +53,15 @@ $(function () {
   })
   $(".downloadBtn .androidBtn").on("click", function(){
     isWachat(function(){
-      alert("微信内置浏览器暂不支持，请使用其他浏览器下载！")
+      $(".Bomb-box").css("display","block");
+      // alert("微信内置浏览器暂不支持，请使用其他浏览器下载！")
     },function(){
       window.open("http://action.ihaveu.com/downloadapp/card/android/CardGame.apk")
     })
+  })
+  
+  $(".Bomb-box").on("click", function(){
+    $(this).css("display","none")
   })
 
   // 第三屏 切换
@@ -182,27 +187,6 @@ $(function () {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   // 第二屏手风琴
 
   $(".feature ul li").on("click", function(){
@@ -238,6 +222,10 @@ $(function () {
         direction: 'horizontal',
        /* paginationBulletRender: function () {
             return '';
+        },*/
+        /*pagination: {
+          el: '.raiders-pagination',
+          Clickable: true
         },*/
         pagination: '.raiders-pagination',
         paginationClickable: true,

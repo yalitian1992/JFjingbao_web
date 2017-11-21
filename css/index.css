@@ -45,7 +45,17 @@ html, body {
     width: 100%;
     height: 100%;
 }
-
+/*弹框*/
+.Bomb-box{
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(../images/bomb-box-bg.png) no-repeat 70% 3%/75% rgba(0,0,0,0.8);
+  z-index: 10;
+}
 
 /* 首屏 */
 .home {
@@ -343,10 +353,10 @@ html, body {
   display: block;
 }
 .model{
-  width: 12.5rem;
-  height: 12.5rem;
+  width: 11.6rem;
+  height: 11.6rem;
   position: relative;
-  margin: 30% auto 0 auto;
+  margin: 25% auto 0 auto;
 }
 .model li{
   position: absolute;
@@ -1149,5 +1159,4 @@ html, body {
   .pic-scroll h4{
     margin: 0 auto;
   }
-  
 }
