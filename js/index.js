@@ -76,11 +76,6 @@ $(function () {
 
 
 
-
-
-
-
-
   //  攻击类详情轮播
   var attackSwiper =  new Swiper('.attack-slide', {
         direction: 'horizontal',
