@@ -79,22 +79,27 @@ $(function () {
 
 
 
-
-
   //  攻击类详情轮播
   var attackSwiper =  new Swiper('.attack-slide', {
         direction: 'horizontal',
        /* paginationBulletRender: function () {
             return '';
         },*/
-        paginationClickable: true,
+        pagination: {
+          Clickable: true,
+        },
+        // paginationClickable: true,
         // pagination: '.attact-pagination',
-        nextButton: '.attact-button-next',
-        prevButton: '.attact-button-prev',
+        navigation: {
+          nextEl: '.attact-button-next',
+          prevEl: '.attact-button-prev',
+        },
+        /*nextButton: '.attact-button-next',
+        prevButton: '.attact-button-prev',*/
         effect: 'coverflow',
         slidesPerView: 3,
         centeredSlides: true,
-        coverflow: {
+        coverflowEffect: {
             rotate: 0,
             stretch: -180,
             depth: 60,
@@ -110,12 +115,16 @@ $(function () {
     //   return '';
     // },
     // pagination: '.defense-pagination',
-    nextButton: '.defense-button-next',
-    prevButton: '.defense-button-prev',
+    navigation: {
+      nextEl: '.defense-button-next',
+      prevEl: '.defense-button-prev',
+    },
+    /*nextButton: '.defense-button-next',
+    prevButton: '.defense-button-prev',*/
     effect: 'coverflow',
     slidesPerView: 3,
     centeredSlides: true,
-    coverflow: {
+    coverflowEffect: {
       rotate: 0,
       stretch: -180,
       depth: 60,
@@ -130,12 +139,16 @@ $(function () {
     //   return '';
     // },
     // pagination: '.control-pagination',
-    nextButton: '.control-button-next',
-    prevButton: '.control-button-prev',
+    navigation: {
+      nextEl: '.control-button-next',
+      prevEl: '.control-button-prev',
+    },
+    /*nextButton: '.control-button-next',
+    prevButton: '.control-button-prev',*/
     effect: 'coverflow',
     slidesPerView: 3,
     centeredSlides: true,
-    coverflow: {
+    coverflowEffect: {
       rotate: 0,
       stretch: -180,
       depth: 60,
@@ -212,8 +225,12 @@ $(function () {
         paginationBulletRender: function () {
             return '';
         },
-        nextButton: '.swiper-button-next',
-        prevButton: '.swiper-button-prev',
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        /*nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',*/
     })
 
 
@@ -223,18 +240,22 @@ $(function () {
        /* paginationBulletRender: function () {
             return '';
         },*/
-        /*pagination: {
+        pagination: {
           el: '.raiders-pagination',
           Clickable: true
-        },*/
-        pagination: '.raiders-pagination',
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        /*pagination: '.raiders-pagination',
         paginationClickable: true,
         nextButton: '.swiper-button-next',
-        prevButton: '.swiper-button-prev',
+        prevButton: '.swiper-button-prev',*/
         effect: 'coverflow',
         slidesPerView: 3,
         centeredSlides: true,
-        coverflow: {
+        coverflowEffect: {
             rotate: 0,
             stretch: -180,
             depth: 60,
